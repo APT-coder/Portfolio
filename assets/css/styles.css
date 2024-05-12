@@ -90,8 +90,9 @@ svg {
   max-width: 100%;
   height: auto;
 }
-
-
+.light__theme{
+  background-color: white;
+}
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;

@@ -97,3 +97,25 @@ sr.reveal(`.about__image, .skills__content`, {origin: 'right'})
 sr.reveal(`.about__image, .skills__content`, {origin: 'right'})
 sr.reveal( `.services__card, .projects__card`, {interval: 100})
 
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', function() {
+        event.preventDefault();
+        if (document.body.classList.contains('light-theme')) {
+            document.body.classList.remove('light-theme');
+            document.documentElement.style.setProperty('--title-color', 'hsl(228, 8%, 95%)');
+            document.documentElement.style.setProperty('--text-color', 'hsl(228, 8%, 65%)');
+            document.documentElement.style.setProperty('--body-color', 'hsl(228, 15%, 20%)');
+            document.documentElement.style.setProperty('--container-color', 'hsl(228, 15%, 15%)');
+            document.documentElement.style.setProperty('--first-color', 'hsl(162, 100%, 40%)');
+        } else {
+            document.body.classList.add('light-theme');
+            document.documentElement.style.setProperty('--title-color', 'hsl(228, 15%, 20%)');
+            document.documentElement.style.setProperty('--text-color', 'hsl(228, 15%, 15%)');
+            document.documentElement.style.setProperty('--body-color', 'hsl(228, 8%, 95%)');
+            document.documentElement.style.setProperty('--container-color', 'hsl(228, 8%, 95%)');
+            document.documentElement.style.setProperty('--first-color', 'hsl(210, 100%, 70%)');
+        }
+    });
+});
+
