@@ -108,13 +108,15 @@ document.addEventListener('DOMContentLoaded', function() {
             document.documentElement.style.setProperty('--body-color', 'hsl(228, 15%, 20%)');
             document.documentElement.style.setProperty('--container-color', 'hsl(228, 15%, 15%)');
             document.documentElement.style.setProperty('--first-color', 'hsl(162, 100%, 40%)');
+            document.documentElement.style.setProperty('--first-color-alt', 'hsl(162, 56%, 35%)');
         } else {
             document.body.classList.add('light-theme');
             document.documentElement.style.setProperty('--title-color', 'hsl(228, 15%, 20%)');
-            document.documentElement.style.setProperty('--text-color', 'hsl(228, 15%, 15%)');
+            document.documentElement.style.setProperty('--text-color', 'hsl(228, 15%, 10%)');
             document.documentElement.style.setProperty('--body-color', 'hsl(228, 8%, 95%)');
-            document.documentElement.style.setProperty('--container-color', 'hsl(228, 8%, 95%)');
-            document.documentElement.style.setProperty('--first-color', 'hsl(210, 100%, 70%)');
+            document.documentElement.style.setProperty('--container-color', 'hsl(228, 8%, 90%)');
+            document.documentElement.style.setProperty('--first-color', 'hsl(224, 89%, 60%)');
+            document.documentElement.style.setProperty('--first-color-alt', 'hsl(224, 89%, 50%)');
         }
     });
 });
